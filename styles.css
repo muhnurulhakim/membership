@@ -315,3 +315,8 @@ footer {
     padding: 1rem;
   }
 }
+
+nav ul.show {
+  display: flex;
+  flex-direction: column;
+}

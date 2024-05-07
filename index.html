@@ -1,51 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membership Website</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Add any additional meta tags for social sharing -->
-  <meta property="og:title" content="Membership Website">
-  <meta property="og:description" content="Unlock exclusive benefits with our membership program. Join now!">
-  <meta property="og:image" content="thumbnail.jpg"> <!-- Path to your thumbnail image -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Selamat datang di Website Membership kami. Bergabunglah sekarang untuk mendapatkan manfaat eksklusif!">
+    <title>Membership Website</title>
+    <link rel="stylesheet" href="styles.css">
+  
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+    <!-- Social Media Thumbnail -->
+    <meta property="og:title" content="Membership Website">
+    <meta property="og:description" content="Selamat datang di Website Membership kami. Bergabunglah sekarang untuk mendapatkan manfaat eksklusif!">
+    <meta property="og:image" content="thumbnail.jpg">
+    <meta property="og:url" content="https://www.contohwebsite.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Membership Website">
+    <meta name="twitter:description" content="Selamat datang di Website Membership kami. Bergabunglah sekarang untuk mendapatkan manfaat eksklusif!">
+    <meta name="twitter:image" content="thumbnail.jpg">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <a href="#"><img src="logo.png" alt="Logo"></a>
-      </div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#" class="join-btn">Join Now</a></li>
-      </ul>
-      <div class="mobile-nav">
-        <span class="hamburger"></span>
-      </div>
-    </nav>
-  </header>
+    <header>
+        <h1>Membership Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#features">Fitur</a></li>
+                <li><a href="#pricing">Harga</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Unlock Exclusive Benefits</h1>
-        <p>Join our membership program and enjoy premium features, discounts, and more.</p>
-        <a href="#" class="cta-btn">Join Now</a>
-      </div>
+    <section id="hero">
+        <div class="slider">
+            <div><img src="image1.jpg" alt="Slider Image 1"></div>
+            <div><img src="image2.jpg" alt="Slider Image 2"></div>
+            <div><img src="image3.jpg" alt="Slider Image 3"></div>
+        </div>
+        <h2>Manfaatkan Keanggotaan Anda</h2>
+        <p>Bergabunglah dengan kami dan nikmati manfaat eksklusif.</p>
+        <a href="#signup" class="btn">Bergabung Sekarang</a>
     </section>
 
-    <!-- Add additional sections for features, pricing, testimonials, etc. -->
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis libero in velit gravida ullamcorper. Sed ac suscipit nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+    </section>
 
-  </main>
+    <section id="features">
+        <h2>Fitur Kami</h2>
+        <ul>
+            <li>Fitur 1</li>
+            <li>Fitur 2</li>
+            <li>Fitur 3</li>
+        </ul>
+    </section>
 
-  <footer>
-    <p>&copy; 2024 Membership Website. All rights reserved.</p>
-  </footer>
+    <section id="pricing">
+        <h2>Paket Harga</h2>
+        <ul>
+            <li>Paket Basic - $10/bulan</li>
+            <li>Paket Pro - $20/bulan</li>
+            <li>Paket Premium - $30/bulan</li>
+        </ul>
+    </section>
 
-  <script src="script.js"></script>
+    <section id="contact">
+        <h2>Hubungi Kami</h2>
+        <p>Email: info@membershipwebsite.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Membership Website</p>
+    </footer>
+
+    <!-- Slick Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

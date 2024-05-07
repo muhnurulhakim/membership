@@ -16,3 +16,12 @@ navLinks.forEach(link => {
     });
   });
 });
+
+// Toggle mobile navigation
+const mobileNav = document.querySelector('.mobile-nav');
+
+mobileNav.addEventListener('click', () => {
+  mobileNav.classList.toggle('active');
+  const navLinks = document.querySelector('nav ul');
+  navLinks.style.display = navLinks.style.display === 'none' ? 'block' : 'none';
+});

@@ -1,6 +1,4 @@
-// script.js
-
-// Add smooth scrolling for navigation links
+// Smooth scrolling for navigation links
 const navLinks = document.querySelectorAll('nav a');
 
 navLinks.forEach(link => {

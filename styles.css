@@ -246,3 +246,52 @@ footer {
 .pricing-cards {
  animation: fadeIn 1s ease;
 }
+
+/* Styles for mobile navigation */
+.mobile-nav {
+  display: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.mobile-nav .hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+
+  nav ul li {
+    margin: 1rem 0;
+  }
+
+  .mobile-nav {
+    display: block;
+    padding: 1rem;
+  }
+
+  .mobile-nav.active .hamburger:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .mobile-nav.active .hamburger:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-nav.active .hamburger:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}

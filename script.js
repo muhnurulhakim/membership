@@ -1,25 +1,48 @@
-// Smooth scrolling for navigation links
-const navLinks = document.querySelectorAll('nav a');
-
-navLinks.forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const targetId = e.currentTarget.getAttribute('href');
-    const targetElement = document.querySelector(targetId);
-    const headerHeight = document.querySelector('header').offsetHeight;
-
-    window.scrollTo({
-      top: targetElement.offsetTop - headerHeight,
-      behavior: 'smooth'
-    });
+// Initialize Slick slider
+$(document).ready(function(){
+  $('.slider').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
   });
 });
 
-// Toggle mobile navigation
-const mobileNav = document.querySelector('.mobile-nav');
-const navLinks = document.querySelector('nav ul');
+// Form validation
+document.getElementById('signupForm').addEventListener('submit', function(event) {
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+  
+  if (!email || !password) {
+    alert('Harap isi semua bidang yang diperlukan.');
+    event.preventDefault();
+  }
+});
 
-mobileNav.addEventListener('click', () => {
-  mobileNav.classList.toggle('active');
-  navLinks.classList.toggle('show');
+// Scroll to top button
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+var rootElement = document.documentElement;
+
+function scrollToTop() {
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+scrollToTopBtn.addEventListener("click", scrollToTop);
+
+// Social media sharing
+document.getElementById('facebookShareBtn').addEventListener('click', function() {
+  var url = window.location.href;
+  window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url), 'facebook-share-dialog', 'width=626,height=436');
+});
+
+document.getElementById('twitterShareBtn').addEventListener('click', function() {
+  var url = window.location.href;
+  window.open('https://twitter.com/share?url=' + encodeURIComponent(url), 'twitter-share-dialog', 'width=626,height=436');
 });
